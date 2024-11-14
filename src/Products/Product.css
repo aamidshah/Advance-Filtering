@@ -1,0 +1,117 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20rem;
+  margin-top: 2rem;
+  z-index: -2;
+  align-items: stretch;
+}
+
+/* @keyframes pop-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.card {
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 260px;
+  animation: pop-in 0.5s ease-out forwards;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.card:nth-child(even) {
+  animation-delay: 0.2s;
+} */
+@keyframes pop-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.card {
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 260px;
+  opacity: 0; 
+  animation: pop-in 0.5s ease-out forwards; /* Pop-in animation only handles initial scaling and opacity */
+  transition: transform 0.3s ease-in-out; 
+
+}
+
+/* Hover effect to scale up/ the card */
+.card:hover {
+  transform: scale(1.05); /* Scales the card when hovered */
+  /* Smooth scaling transition is handled by the transition property defined in .card */
+}
+
+
+
+/* Add delays for odd and even cards */
+.card:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.card:nth-child(even) {
+  animation-delay: 0.2s;
+}
+.card-img {
+  width: 13rem;
+  margin-bottom: 3rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  margin-top: 5px;
+}
+
+.card-reviews {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.rating-star {
+  color: #d5ab55;
+}
+.total-reviews {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: -17px;
+}
+
+.bag-icon {
+  color: #535353;
+}

@@ -1,0 +1,12 @@
+.color-title {
+  margin-top: 2rem;
+}
+
+.all {
+  background:linear-gradient(blue,crimson)
+}
+.white{
+  background-color: rgb(238, 227, 227);
+  /* border: 0.1px solid black; */
+  /* border: black; */
+}

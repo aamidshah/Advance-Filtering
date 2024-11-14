@@ -1,0 +1,73 @@
+.sidebar-title {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 20px;
+ 
+}
+
+sidebar-item {
+  margin-bottom: 10px;
+}
+.sidebar-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.sidebar-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+.checkbox{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+width: 20px;
+background-color: #eee;
+border-radius: 50%;
+
+}
+
+.sidebar-label:hover input ~ .checkbox {
+  background-color: #ccc;
+}
+
+.sidebar-label input:checked ~ .checkbox {
+  background-color: #2196F3;
+}
+
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sidebar-label input:checked ~ .checkbox:after {
+  display: block;
+}
+
+.sidebar-label .checkbox:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.line{
+margin: 3rem ;
+border-color: #f7f7f7;
+
+}
